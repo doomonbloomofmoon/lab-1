@@ -11,7 +11,7 @@ namespace Laboratory_1
         int cols;
         int rows;
         int[,] matrix;
-        string exercise = "2.4. В двухмерном массиве вещественных " +
+        protected string exercise = "2.4. В двухмерном массиве вещественных " +
             "чисел поменять местами строки и столбцы " +
             "с одинаковыми номерами.";
 

@@ -12,6 +12,7 @@ namespace Laboratory_1
         {
             Console.WriteLine(_exercise + "\n");
         }
+
         public abstract void Do();
     }
 }

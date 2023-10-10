@@ -5,9 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Laboratory_1
-{
+{/*
     internal class Part_3_4 : Part
     {
-
-    }
+        public override void Do()
+        {
+            
+        }
+    }*/
 }
