@@ -11,9 +11,7 @@ namespace Laboratory_1
         int cols;
         int rows;
         int[,] matrix;
-        protected string exercise = "2.4. В двухмерном массиве вещественных " +
-            "чисел поменять местами строки и столбцы " +
-            "с одинаковыми номерами.";
+        string exercise = "2.4. В двухмерном массиве вещественных чисел поменять местами строки и столбцы с одинаковыми номерами.";
 
         public Part_2_4(int _cols, int _rows)
         {
@@ -24,6 +22,8 @@ namespace Laboratory_1
 
         public override void Do()
         {
+            OutTask(exercise);
+
             FillArray();
 
             PrintArray("Элементы массива: ");
@@ -41,6 +41,8 @@ namespace Laboratory_1
             }
 
             PrintArray("Элементы после работы программы: ");
+
+            Console.WriteLine();
         }
 
         private void FillArray()
@@ -53,10 +55,6 @@ namespace Laboratory_1
         private void PrintArray(string _phrase)
         {
             Console.WriteLine(_phrase);
-
-            char copyleft = '\u1000';
-
-            Console.WriteLine(copyleft);
 
             for (int i = 0; i < cols; i++)
             {
