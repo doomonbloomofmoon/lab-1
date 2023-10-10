@@ -11,6 +11,9 @@ namespace Laboratory_1
         int cols;
         int rows;
         int[,] matrix;
+        string exercise = "2.4. В двухмерном массиве вещественных " +
+            "чисел поменять местами строки и столбцы " +
+            "с одинаковыми номерами.";
 
         public Part_2_4(int _cols, int _rows)
         {
@@ -21,19 +24,9 @@ namespace Laboratory_1
 
         public override void Do()
         {
-            Random rand = new Random();
-            for (int i = 0; i < cols; i++)
-                for (int j = 0; j < rows; j++)
-                    matrix[i, j] = rand.Next(10);
+            FillArray();
 
-            Console.WriteLine("Элементы массива: ");
-
-            for (int i = 0; i < cols; i++)
-            {
-                for (int j = 0; j < rows; j++)
-                    Console.Write($"{matrix[i, j]}  ");
-                Console.WriteLine();
-            }
+            PrintArray("Элементы массива: ");
 
             Console.WriteLine();
 
@@ -47,12 +40,24 @@ namespace Laboratory_1
                 }
             }
 
-            Console.WriteLine("Элементы после работы программы: ");
+            PrintArray("Элементы после работы программы: ");
+        }
+
+        private void FillArray()
+        {
+            for (int i = 0; i < cols; i++)
+                for (int j = 0; j < rows; j++)
+                    matrix[i, j] = i;
+        }
+
+        private void PrintArray(string _phrase)
+        {
+            Console.WriteLine(_phrase);
 
             for (int i = 0; i < cols; i++)
             {
                 for (int j = 0; j < rows; j++)
-                    Console.Write($"{matrix[i, j]}  ");
+                    Console.Write(matrix[i, j] + " ");
                 Console.WriteLine();
             }
         }

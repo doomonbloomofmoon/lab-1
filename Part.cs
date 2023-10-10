@@ -8,6 +8,10 @@ namespace Laboratory_1
 {
     abstract internal class Part
     {
+        protected void OutTask(string _exercise)
+        {
+            Console.WriteLine(_exercise + "\n");
+        }
         public abstract void Do();
     }
 }
