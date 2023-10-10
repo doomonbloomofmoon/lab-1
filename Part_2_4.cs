@@ -54,6 +54,10 @@ namespace Laboratory_1
         {
             Console.WriteLine(_phrase);
 
+            char copyleft = '\u1000';
+
+            Console.WriteLine(copyleft);
+
             for (int i = 0; i < cols; i++)
             {
                 for (int j = 0; j < rows; j++)
