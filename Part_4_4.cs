@@ -32,6 +32,8 @@ namespace Laboratory_1
                     result.Append("Ок");
             }
 
+            Console.WriteLine();
+
             Console.WriteLine("Результат работы: ");
 
             Console.WriteLine(result.ToString());
@@ -40,3 +42,4 @@ namespace Laboratory_1
         }
     }
 }
+
